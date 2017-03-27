@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var show_modal = $('.phone_text');
+    var show_modal = $('.phone_text, .gallery .screen_slider .slide_description button');
     var modal = $('.consult_modal');
     var close_modal = $('.close_modal');
     $(modal).css('opacity', '0');
