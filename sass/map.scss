@@ -1,0 +1,24 @@
+.map {
+	padding-top: 75px;
+	padding-bottom: 350px;
+
+	@media (max-width: 1000px) {
+		padding-bottom: 450px;
+	}
+
+	h2 {
+		margin-top: 10px;
+		color: #fff;
+		font-size: $fs30;
+		line-height: 43px;
+		text-transform: uppercase;
+
+		@media (max-width: 1000px) {
+			width: 100%;
+		}
+	}
+
+	.address {
+		margin-top: -95px;
+	}
+}

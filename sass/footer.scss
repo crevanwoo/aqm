@@ -1,0 +1,148 @@
+.footer {
+	width: 100%;
+	height: 82px;
+	padding: 0 30px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+
+	@media (min-width: 1600px) {
+		height: 6vw;
+	}
+
+	.social {
+		float: left;
+		margin-top: 30px;
+		margin-bottom: 20px;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		@media (min-width: 1600px) {
+			margin-top: 2.1vw;
+		}
+
+		.social_sprite {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			border: 3px solid #7b7c7c;
+			border-radius: 50%;
+			background-image: url('../img/social_sprite.png');
+
+			@media (min-width: 1600px) {
+				width: 2vw;
+				height: 2vw;
+				background-size: 8.45vw 1.1vw;
+				border-width: 0.2vw;
+			}
+
+			&:hover {
+				border: 3px solid #fff;
+			}
+		}
+
+		.social_sprite_black {
+			border: 3px solid #000;
+			background-image: url('../img/social_sprite_black.png');
+
+			&:hover {
+				border: 3px solid #7b7c7c;
+			}
+		}
+
+		.fb {
+			background-position: 9px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: 0.6vw 0.35vw;
+			}
+		}
+
+		.inst {
+			background-position: -33px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: -2vw 0.4vw;
+			}
+		}
+
+		.tw {
+			background-position: -73px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: -4.5vw 0.4vw;
+			}
+		}
+
+		.vk {
+			background-position: -112px 5px;
+
+			@media (min-width: 1600px) {
+				background-position: -7vw 0.4vw;
+			}
+		}
+	}
+
+	.made_by {
+		float: right;
+		width: 270px;
+		height: 60px;
+		margin: 0 auto;
+		margin-top: 14px;
+		text-align: center;
+
+		@media (max-width: 500px) {
+			top: 100px;
+			width: 100%;
+			text-align: center;
+		}
+
+		@media (min-width: 1600px) {
+			width: 18vw;
+			margin-top: 1vw;
+		}
+
+		span {
+			vertical-align: middle;
+			font-size: $fs13;
+			color: #fff;
+
+			@media (max-width: 500px) {
+				display: none;
+			}
+
+			@media (min-width: 1600px) {
+				font-size: 0.85vw;	
+			}
+		}
+
+		.manufacturer {
+			display: inline-block;
+			vertical-align: middle;
+			width: 120px;
+			height: 63px;
+			margin-left: 5px;
+			background-image: url('../img/crepla.png');
+
+			@media (min-width: 1600px) {
+				width: 7.5vw;
+				height: 3.5vw;
+				background-size: 100%;
+			}
+		}
+	}
+
+	.made_by_black {
+
+		span {
+			color: #000;
+		}
+
+		.manufacturer {
+			background-image: url('../img/crepla_black.png');
+		}
+	}
+}

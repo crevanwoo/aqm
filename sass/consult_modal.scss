@@ -1,0 +1,191 @@
+.consult_modal {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+
+	.modal_wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 900px;
+		height: 400px;
+		padding-top: 90px;
+		padding-right: 40px;
+		padding-bottom: 55px;
+		padding-left: 30px;
+		background-color: #fff;
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+
+		@media (max-width: 1000px) {
+			width: 90%;
+			height: auto;
+			min-height: 450px; 
+			padding-top: 50px;
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		h1 {
+			width: 330px;
+			margin-bottom: 15px;
+			font-size: $fs36;
+			line-height: 38px;
+			text-transform: uppercase;
+			font-weight: bold;
+
+			@media (max-width: 1000px) {
+				width: 90%;
+				margin: 0 auto;
+				margin-bottom: 15px;
+				text-align: center;
+				font-size: $fs24;
+			}
+		}
+
+		p {
+			color: #666666;
+
+			@media (max-width: 1000px) {
+				text-align: center;
+				padding: 0 5%;
+				margin-bottom: 250px;
+				color: #000;
+			}
+		}
+
+		form {
+
+			&::before {
+					content: 'Ваше имя:';
+					position: absolute;
+					z-index: 10;
+					right: 329px;
+					bottom: 269px;
+					width: 103px;
+					height: 23px;
+					padding-top: 3px;
+					border-right: 1px solid #cccccc;
+					text-align: center;
+					font-size: $fs14;
+
+					@media (max-width: 1000px) {
+						display: none;
+					}
+				}
+
+				&::after {
+					content: 'Телефон:';
+					position: absolute;
+					z-index: 10;
+					right: 329px;
+					bottom: 201px;
+					width: 103px;
+					height: 23px;
+					padding-top: 3px;
+					border-right: 1px solid #cccccc;
+					text-align: center;
+					font-size: $fs14;
+
+					@media (max-width: 1000px) {
+						display: none;
+					}
+				}
+
+			input[type=text] {
+				position: absolute;
+				width: 394px;
+				height: 52px;
+				padding-left: 124px;
+				border: 1px solid #e3e3e3;
+				outline: none;
+
+				@media (max-width: 1000px) {
+					width: 90%;
+					padding-left: 0;
+					text-align: center;
+				}
+ 
+
+				&:nth-of-type(1) {
+					right: 40px;
+					bottom: 256px;
+
+					@media (max-width: 1000px) {
+						bottom: 206px;
+						right: 50%;
+						transform: translatex(50%);
+					}
+				}
+
+				&:nth-of-type(2) {
+					right: 40px;
+					bottom: 188px;
+
+					@media (max-width: 1000px) {
+						bottom: 138px;
+						right: 50%;
+						transform: translatex(50%);
+					}
+				}
+
+				&::placeholder {
+					color: #000;
+					font-size: $fs14;
+					font-weight: bold;
+				}
+			}
+
+			input[type=submit] {
+				position: absolute;
+				left: 50%;
+				bottom: 54px;
+				width: 244px;
+				height: 52px;
+				border: 2px solid #000;
+				background-color: transparent;
+				transform: translatex(-50%);
+				cursor: pointer;
+				font-weight: bold;
+
+				@media (max-width: 1000px) {
+					width: 90%;
+				}
+			}
+		}
+
+		.close_modal {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: -5px;
+				right: 13px;
+				width: 1px;
+				height: 35px;
+				background-color: #000;
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: -5px;
+				right: 13px;
+				width: 1px;
+				height: 35px;
+				background-color: #000;
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

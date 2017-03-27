@@ -1,0 +1,11 @@
+.google {
+	margin-bottom: 20px;
+
+	@media (max-width: 1000px) {
+		display: none;
+	}
+
+	img {
+		width: 100%;
+	}
+}

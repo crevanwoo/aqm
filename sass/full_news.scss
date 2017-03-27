@@ -1,0 +1,161 @@
+.full_news {
+
+	.big_sprite {
+		width: 100%;
+	}
+
+	.full_news_text {
+
+		h2 {
+			font-size: $fs22;
+			/* line-height: 60px; */
+			padding-right: 20px;
+			padding-left: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: #333333;
+		}
+
+		.underheader {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 20px;
+
+			@media (max-width: 430px) {
+				margin-bottom: 50px;
+			}
+
+			.calendar {
+				display: inline-block;
+
+				img {
+					position: absolute;
+				}
+				
+				span {
+					padding-left: 35px;
+				}
+			}
+
+			a {
+				margin-left: 35px;
+				text-decoration: underline;
+			}
+
+			.rating {
+				position: absolute;
+				right: 20px;
+				display: inline-block;
+
+				@media (max-width: 430px) {
+					left: 20px;
+					bottom: -40px;
+				}
+
+				img {
+					margin-right: -2px;
+				}
+			}
+		}
+	}
+
+	.article {
+		padding: 20px;
+		padding-bottom: 30px;
+
+		p {
+			font-size: $fs14;
+			line-height: 22px;
+		}
+
+		h4 {
+			font-size: $fs16;
+			margin-top: 26px;
+			margin-bottom: 26px;
+		}
+
+		span {
+			margin-top: 20px;
+			font-family: 'Didact Gothic';
+			font-style: italic; 
+			color: #666666;
+			font-size: $fs14;
+
+			a {
+				color: #666666;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.prev_next {
+	margin: 25px 0;
+
+
+	a {
+		font-family: 'Didact Gothic';
+		font-weight: bold;
+		color: #666666;
+	}
+
+	.prev,
+	.next {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px solid #666666;
+		cursor: pointer;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+		}
+	}
+
+	.prev {
+		padding-left: 15px;
+
+		&::before {
+			top: 8px;
+			left: 0;
+			transform: rotate(-135deg);
+		}
+
+		&::after {
+			top: 8px;
+			left: 5px;
+			transform: rotate(-135deg);
+		}
+	}
+
+	.next {
+		float: right;
+		padding-right: 15px;
+
+		&::before {
+			top: 8px;
+			right: 5px;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			top: 8px;
+			right: 0;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.disqus {
+	padding: 20px;
+	
+	img {
+		width: 100%;
+		max-width: 828px;
+	}
+}

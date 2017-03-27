@@ -1,0 +1,147 @@
+.index .caption button {
+    transition-duration: 0.3s;
+}
+
+.index .caption button:hover {
+    background-color: #f3d10f
+}
+
+.index .figures {}
+
+.index .figures:before {
+    animation-name: arrow;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.index .figures:after {
+    animation-name: arrow;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.services_wrapper .laying .video_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.services_wrapper .laying .video_wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.services_wrapper .laying video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.services_wrapper h1.animated,
+.index h1.animated {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+.main_nav .menu_active_black a {
+    border-bottom: 1px dashed #000;
+}
+
+
+/* slide_preview_active*/
+
+.gallery_wrapper .slider .previews .slick-current {}
+
+.gallery .screen_slider .slider .previews .slick-current {
+    background-color: #fff;
+}
+
+.gallery .screen_slider .slider .previews .slick-current img {
+    opacity: 0.5;
+}
+
+.gallery_wrapper .slider .previews .slide_preview {
+    width: 125px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery_wrapper .slider .previews .slide_preview img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery .screen_slider .screen_slider_points {
+    bottom: 45px;
+    width: 1px;
+    background-color: #4d4d4d;
+}
+
+.gallery .screen_slider .screen_slider_points li {
+    height: 45px;
+    background-color: transparent;
+    margin-left: -21px;
+    margin-bottom: 0;
+}
+
+.gallery .screen_slider .screen_slider_points li:after {
+    width: 5px;
+    height: 5px;
+    left: 19px;
+    top: 0;
+    cursor: pointer;
+    background-color: #4d4d4d;
+}
+
+.gallery .screen_slider .screen_slider_points .slick-active {
+    position: relative;
+    z-index: 1;
+    margin-left: -21px;
+    width: 42px;
+    background-image: url("../img/logo.png");
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.gallery .screen_slider .screen_slider_points .slick-active:after {
+    display: none;
+}
+
+.screen_slider_points button {
+    background-color: transparent;
+    font-size: 0;
+    border: none;
+}
+
+.screen_slider_points button:focus {
+    outline: none;
+}
+
+@keyframes arrow {
+    0% {
+        margin-top: 0px
+    }
+    100% {
+        margin-top: 10px
+    }
+}
