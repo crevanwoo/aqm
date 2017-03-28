@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="css/features.css">
 </head>
 <style>
-    @media all and (min-width: 1001px) and (max-width: 1600px){
+    @media all and (min-width: 1001px) {
+        .gallery .slider,
+        .gallery .screen_slider .slide_description {
+            position: absolute;
+            top: 0;
+        }
         .figure_wrapper {
             height: 100vh;
         }
@@ -26,12 +31,6 @@
     
     body {
         background-color: #fff;
-    }
-    
-    @media all and (max-width: 1000px) {
-        .screen_slider_points {
-            display: none !important;
-        }
     }
 
 </style>
@@ -93,22 +92,47 @@
         <div class="gallery_wrapper">
             <div class="gallery clearfix">
                 <div class="screen_slider">
-                    <!--<ul class="screen_slider_points">
-						<li><a href="#"></a></li>
-						<li><a href="#" class="active_screen"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>-->
+                    <ul class="screen_slider_points">
+                        <div class="active_screen"></div>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
 
-                    <div class="slider">
+                    <div class="slider" data-tab="tab_1">
                         <div class="slide">
                             <div class="slide_view">
                                 <img src="img/slide.jpg" alt="Газон">
@@ -181,7 +205,7 @@
                         </div>
                     </div>
 
-                    <div class="slide_description">
+                    <div class="slide_description" data-tab="tab_1">
                         <h2>Одесса совиньон</h2>
                         <ul>
                             <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
@@ -193,6 +217,105 @@
                         <div class="description_scroll"></div>
                         <button>Получить консультацию</button>
                     </div>
+
+
+
+
+                    <div class="slider" data-tab="tab_2">
+                        <div class="slide">
+                            <div class="slide_view">
+                                <img src="img/slide.jpg" alt="Газон">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+
+                            <!--<div class="slide_separator"></div>-->
+                            <!--<img src="img/slide.jpg" alt="Газон">-->
+                        </div>
+                        <div class="previews">
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide_description" data-tab="tab_2">
+                        <h2>Одесса совиньон</h2>
+                        <ul>
+                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
+                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
+                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
+                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
+                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
+                        </ul>
+                        <div class="description_scroll"></div>
+                        <button>Получить консультацию</button>
+                    </div>
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -241,6 +364,7 @@
 
     <script type="text/javascript" src="js/jquery.event.move.js"></script>
     <script type="text/javascript" src="js/scroll_effects.js"></script>
+    <script type="text/javascript" src="js/gallery_scripts.js"></script>
 
 </body>
 

@@ -1,138 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>contact</title>
-	<link rel="shortcut icon" href="img/logo.png" type="image/png">
-	<link rel="stylesheet" href="css/style.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/features.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/features.css">
+    <style>
+        @media all and (min-width: 1001px) {
+            header {
+                position: relative;
+            }
+            .gallery .slider,
+            .gallery .screen_slider .slide_description {
+                position: absolute;
+                top: 0;
+            }
+            .figure_wrapper {
+                height: 100vh;
+            }
+            footer {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+    </style>
+
 </head>
-<body> 
 
-	<div class="figure_wrapper">
-		<div class="figure4"></div>
+<body class="contact_page">
 
-		<header class="header clearfix">
-			<a href="index.html">
-				<div class="logo">
-					<h1>AQM</h1>
-					<span>Компания №1 в монтаже систем автополива</span>
-				</div>
-			</a>
+    <div class="figure_wrapper">
+        <div class="figure4">
 
-			<div class="header_right header_right_black_menu">
-				<div class="menu_button">
-					<div class="menu_line"></div>
-					<div class="menu_line"></div>
-					<div class="menu_line"></div>
-				</div>
-				<nav class="main_nav hide">
-					<div class="hide_menu"></div>
-					<div class="menu_text">
-						<h1>AQM</h1>
-						<span>Компания №1 в монтаже систем автополива</span>
-					</div>
-					<ul class="menu_inline">
-						<li><a href="about.html">О нас</a></li>
-						<li><a href="gallery.html">Объекты</a></li>
-						<li><a href="reviews.html">Отзывы</a></li>
-						<li><a href="blog.html">Блог</a></li>
-						<li class="menu_active_black"><a href="contact.html">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="header_phone">
-					<a href="tel:+380508447776" class="phone">+380508447776</a>
-					<div class="phone_text">Получить консультацию</div>
-				</div>
-			</div>
-		</header>
 
-		<div class="consult_modal hide">
-			<div class="modal_wrapper">
-				<div class="figure10"></div>
-				<form action="#">
-					<h1>Закажите консультацию</h1>
-					<p>Для получения кунсультации<br> и обсуждения проекта</p>
-					<input type="text" placeholder="Марк Васильевич">
-					<input type="text" placeholder="+380508447777">
-					<input type="submit" value="Оставить завяку">
-				</form>
-				<div class="close_modal"></div>
-			</div>
-		</div> 
 
-		<div class="contact_wraper clearfix">
-			<div class="contact">
-				<h2>Свяжитесь с нами</h2>
-				<form action="#">
-					<label for="name">Имя:</label>
-					<input type="text" id="name" placeholder="Марк Васильев">
-					<label for="email">Email:</label>
-					<input type="text" id="email" placeholder="Марк Васильев">
-					<label for="text">Текст:</label>
-					<textarea name="" id="text" placeholder="Марк Васильев"></textarea>
-					<input type="submit" placeholder="Отправить" class="button">
-				</form>
-			</div>
 
-			<div class="address">
-				<div class="street address_element">
-					<span><b>Одесса</b><br>ул. Ильфа и Петрова 20</span>
-				</div>
+        </div>
+        <div class="google_map"></div>
+        <header class="header clearfix">
+            <a href="index.html">
+                <div class="logo">
+                    <h1>AQM</h1>
+                    <span>Компания №1 в монтаже систем автополива</span>
+                </div>
+            </a>
 
-				<div class="timetable address_element">
-					<span><b>График работы</b><br>c 9:00 до 19:00</span>
-				</div>
+            <div class="header_right header_right_black_menu">
+                <div class="menu_button">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                </div>
+                <nav class="main_nav hide">
+                    <div class="hide_menu"></div>
+                    <div class="menu_text">
+                        <h1>AQM</h1>
+                        <span>Компания №1 в монтаже систем автополива</span>
+                    </div>
+                    <ul class="menu_inline">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="gallery.html">Объекты</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li class="menu_active_black"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header_phone">
+                    <a href="tel:+380508447776" class="phone">+380508447776</a>
+                    <div class="phone_text">Получить консультацию</div>
+                </div>
+            </div>
+        </header>
 
-				<div class="email address_element">
-					<span><b>email</b><br><a href="mailto:customer.service@aqm.in.ua">customer.service @aqm.in.ua</a>
+        <div class="consult_modal hide">
+            <div class="modal_wrapper">
+                <div class="figure10"></div>
+                <form action="#">
+                    <h1>Закажите консультацию</h1>
+                    <p>Для получения кунсультации<br> и обсуждения проекта</p>
+                    <input type="text" placeholder="Марк Васильевич">
+                    <input type="text" placeholder="+380508447777">
+                    <input type="submit" value="Оставить завяку">
+                </form>
+                <div class="close_modal"></div>
+            </div>
+        </div>
+
+        <div class="contact_wraper clearfix">
+            <div class="contact">
+                <h2>Свяжитесь с нами</h2>
+                <form action="#">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" placeholder="Марк Васильев">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Марк Васильев">
+                    <label for="text">Текст:</label>
+                    <textarea name="" id="text" placeholder="Марк Васильев"></textarea>
+                    <input type="submit" placeholder="Отправить" class="button">
+                </form>
+            </div>
+
+            <div class="address">
+                <div class="street address_element">
+                    <span><b>Одесса</b><br>ул. Ильфа и Петрова 20</span>
+                </div>
+
+                <div class="timetable address_element">
+                    <span><b>График работы</b><br>c 9:00 до 19:00</span>
+                </div>
+
+                <div class="email address_element">
+                    <span><b>email</b><br><a href="mailto:customer.service@aqm.in.ua">customer.service @aqm.in.ua</a>
 					</span>
-				</div>
+                </div>
 
-				<div class="phone address_element">
-					<span><b>Телефон</b><br><a href="+380671443924">+38 (067) 144-39-24</a></span>
-				</div>
-			</div>
-		</div>
+                <div class="phone address_element">
+                    <span><b>Телефон</b><br><a href="+380671443924">+38 (067) 144-39-24</a></span>
+                </div>
+            </div>
+        </div>
 
-		<footer class="footer">
-			<div class="social">
-				<a href="#">
-					<div class="social_sprite fb">
-					</div>
-				</a>
-				<a href="#">
-					<div class="social_sprite inst">
-					</div>
-				</a>
-				<a href="#">
-					<div class="social_sprite tw">
-					</div>
-				</a>
-				<a href="#">
-					<div class="social_sprite vk">
-					</div>
-				</a>
-			</div>
+        <footer class="footer">
+            <div class="social">
+                <a href="#">
+                    <div class="social_sprite fb">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social_sprite inst">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social_sprite tw">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social_sprite vk">
+                    </div>
+                </a>
+            </div>
 
-			<div class="made_by made_by_black clearfix">
-				<span>Разработка сайта:</span>
-				<a href="http://www.crepla.com/">
-					<div class="manufacturer"></div>
-				</a>
-			</div>
-		</footer>
-	</div>
+            <div class="made_by made_by_black clearfix">
+                <span>Разработка сайта:</span>
+                <a href="http://www.crepla.com/">
+                    <div class="manufacturer"></div>
+                </a>
+            </div>
+        </footer>
+    </div>
 
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/mobile_menu.js"></script>
-	<script type="text/javascript" src="js/consult_modal.js"></script>
-	 <script type="text/javascript" src="js/jquery.viewportchecker.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/mobile_menu.js"></script>
+    <script type="text/javascript" src="js/consult_modal.js"></script>
+    <script type="text/javascript" src="js/jquery.viewportchecker.min.js"></script>
     <script type="text/javascript" src="js/scroll_effects.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4H5-YW7iQeejWHojtjT7M1fhc6GpWFUQ&amp;callback=initMapYellow"></script>
 
 </body>
+
 </html>
