@@ -18,7 +18,7 @@
         .gallery .slider,
         .gallery .screen_slider .slide_description {
             position: absolute;
-            top: 0;
+            top: 0 !important;
         }
         .figure_wrapper {
             height: 100vh;
@@ -37,6 +37,27 @@
         .gallery .screen_slider .screen_slider_points li {
             width: 5px;
             height: 5px;
+        }
+    }
+    
+    @media all and (max-width: 1000px) {
+        .gallery .slider,
+        .gallery .screen_slider .slide_description {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gallery .slider {
+            top: 0;
+        }
+        .gallery .screen_slider .slide_description {
+            top: 500px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -141,7 +162,7 @@
 
                     <!-- single project begins -->
 
-                    <div class="slider" data-tab="tab_1">
+                    <div class="slider" data-tab="1">
                         <div class="slide">
                             <div class="slide_view">
                                 <img src="img/slide.jpg" alt="Газон">
@@ -214,7 +235,7 @@
                         </div>
                     </div>
 
-                    <div class="slide_description" data-tab="tab_1">
+                    <div class="slide_description" data-tab="1">
                         <h2>Одесса совиньон</h2>
                         <ul>
                             <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
@@ -230,7 +251,7 @@
 
                     <!-- single project begins -->
 
-                    <div class="slider" data-tab="tab_2">
+                    <div class="slider" data-tab="2">
                         <div class="slide">
                             <div class="slide_view">
                                 <img src="img/slide.jpg" alt="Газон">
@@ -303,289 +324,7 @@
                         </div>
                     </div>
 
-                    <div class="slide_description" data-tab="tab_2">
-                        <h2>Одесса совиньон</h2>
-                        <ul>
-                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
-                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
-                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
-                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
-                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
-                        </ul>
-                        <div class="description_scroll"></div>
-                        <button>Получить консультацию</button>
-                    </div>
-
-
-
-                    <!-- single project ends -->
-
-
-                    <!-- single project begins -->
-
-                    <div class="slider" data-tab="tab_3">
-                        <div class="slide">
-                            <div class="slide_view">
-                                <img src="img/slide.jpg" alt="Газон">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-
-                            <!--<div class="slide_separator"></div>-->
-                            <!--<img src="img/slide.jpg" alt="Газон">-->
-                        </div>
-                        <div class="previews">
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide_description" data-tab="tab_3">
-                        <h2>Одесса совиньон</h2>
-                        <ul>
-                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
-                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
-                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
-                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
-                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
-                        </ul>
-                        <div class="description_scroll"></div>
-                        <button>Получить консультацию</button>
-                    </div>
-
-
-
-                    <!-- single project ends -->
-
-
-
-
-                    <!-- single project begins -->
-
-                    <div class="slider" data-tab="tab_4">
-                        <div class="slide">
-                            <div class="slide_view">
-                                <img src="img/slide.jpg" alt="Газон">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-
-                            <!--<div class="slide_separator"></div>-->
-                            <!--<img src="img/slide.jpg" alt="Газон">-->
-                        </div>
-                        <div class="previews">
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide_description" data-tab="tab_4">
-                        <h2>Одесса совиньон</h2>
-                        <ul>
-                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
-                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
-                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
-                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
-                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
-                        </ul>
-                        <div class="description_scroll"></div>
-                        <button>Получить консультацию</button>
-                    </div>
-
-
-
-                    <!-- single project ends -->
-
-
-
-                    <!-- single project begins -->
-
-                    <div class="slider" data-tab="tab_5">
-                        <div class="slide">
-                            <div class="slide_view">
-                                <img src="img/slide.jpg" alt="Газон">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-                            <div class="slide_view">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                                <img src="img/slide.jpg" alt="Газон">
-                            </div>
-
-                            <!--<div class="slide_separator"></div>-->
-                            <!--<img src="img/slide.jpg" alt="Газон">-->
-                        </div>
-                        <div class="previews">
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_2.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                            <div class="slide_preview">
-                                <img src="img/gazon_1.jpg" alt="Превью">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide_description" data-tab="tab_5">
+                    <div class="slide_description" data-tab="2">
                         <h2>Одесса совиньон</h2>
                         <ul>
                             <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
@@ -605,7 +344,7 @@
 
                     <!-- single project begins -->
 
-                    <div class="slider" data-tab="tab_6">
+                    <div class="slider" data-tab="3">
                         <div class="slide">
                             <div class="slide_view">
                                 <img src="img/slide.jpg" alt="Газон">
@@ -678,7 +417,196 @@
                         </div>
                     </div>
 
-                    <div class="slide_description" data-tab="tab_6">
+                    <div class="slide_description" data-tab="3">
+                        <h2>Одесса совиньон</h2>
+                        <ul>
+                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
+                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
+                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
+                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
+                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
+                        </ul>
+                        <div class="description_scroll"></div>
+                        <button>Получить консультацию</button>
+                    </div>
+
+
+
+                    <!-- single project ends -->
+
+
+
+
+                    <!-- single project begins -->
+
+                    <div class="slider" data-tab="4">
+                        <div class="slide">
+                            <div class="slide_view">
+                                <img src="img/slide.jpg" alt="Газон">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+
+                            <!--<div class="slide_separator"></div>-->
+                            <!--<img src="img/slide.jpg" alt="Газон">-->
+                        </div>
+                        <div class="previews">
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide_description" data-tab="4">
+                        <h2>Одесса совиньон</h2>
+                        <ul>
+                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
+                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
+                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
+                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
+                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
+                        </ul>
+                        <div class="description_scroll"></div>
+                        <button>Получить консультацию</button>
+                    </div>
+
+
+
+                    <!-- single project ends -->
+
+
+
+                    <!-- single project begins -->
+
+                    <div class="slider" data-tab="5">
+                        <div class="slide">
+                            <div class="slide_view">
+                                <img src="img/slide.jpg" alt="Газон">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+
+                            <!--<div class="slide_separator"></div>-->
+                            <!--<img src="img/slide.jpg" alt="Газон">-->
+                        </div>
+                        <div class="previews">
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide_description" data-tab="5">
                         <h2>Одесса совиньон</h2>
                         <ul>
                             <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
@@ -698,7 +626,7 @@
 
                     <!-- single project begins -->
 
-                    <div class="slider" data-tab="tab_7">
+                    <div class="slider" data-tab="6">
                         <div class="slide">
                             <div class="slide_view">
                                 <img src="img/slide.jpg" alt="Газон">
@@ -771,7 +699,100 @@
                         </div>
                     </div>
 
-                    <div class="slide_description" data-tab="tab_7">
+                    <div class="slide_description" data-tab="6">
+                        <h2>Одесса совиньон</h2>
+                        <ul>
+                            <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>
+                            <li>Территорию участка хозяин попросил не фотографировать по личным причинам!</li>
+                            <li>Сумарно работа заняла около 7 дней. За это время были произведены все земляные работы, выполнена планировка участка.</li>
+                            <li>Уложено 310 кв.метров рулонного газона и смонтирован автополив.</li>
+                            <li>Установлено 92 дождевателя, уложено 300 метров капельной трубки и точечно подведен</li>
+                        </ul>
+                        <div class="description_scroll"></div>
+                        <button>Получить консультацию</button>
+                    </div>
+
+
+
+                    <!-- single project ends -->
+
+
+                    <!-- single project begins -->
+
+                    <div class="slider" data-tab="7">
+                        <div class="slide">
+                            <div class="slide_view">
+                                <img src="img/slide.jpg" alt="Газон">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+                            <div class="slide_view">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                                <img src="img/slide.jpg" alt="Газон">
+                            </div>
+
+                            <!--<div class="slide_separator"></div>-->
+                            <!--<img src="img/slide.jpg" alt="Газон">-->
+                        </div>
+                        <div class="previews">
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_2.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                            <div class="slide_preview">
+                                <img src="img/gazon_1.jpg" alt="Превью">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide_description" data-tab="7">
                         <h2>Одесса совиньон</h2>
                         <ul>
                             <li>Объект расположен на Совиньоне. Здесь мы можем показать вам только полив придомового газона.</li>

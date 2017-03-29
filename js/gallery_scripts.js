@@ -32,23 +32,24 @@ $('.gallery_wrapper .slider .previews').slick({
 
 
 // Gallery Tabs
-console.log($('.screen_slider_points').height());
+
 var slider_point_margin = ($('.screen_slider_points').height() / ($('.slider[data-tab]').length - 1)) - 5;
 
 function setProjectsNav() {
     for (var i = 0; i < $('.slider[data-tab]').length; i++) {
-        $('.screen_slider_points').append('<li><a href="#"></a></li>')
+        $('.screen_slider_points').append('<li data-project-trigger="' + (i + 1) + '"><a href="#"></a></li>')
     }
     $('.screen_slider_points li:not(:last-of-type)').css('margin-bottom', slider_point_margin + 'px')
 }
-setProjectsNav() 
+setProjectsNav()
 
 
 $('.gallery [data-tab]').css('opacity', '0');
 $('.gallery [data-tab]').css('visibility', 'hidden');
 
-$('.gallery [data-tab="tab_1"]').css('opacity', '1');
-$('.gallery [data-tab="tab_1"]').css('visibility', 'visible');
+$('.gallery [data-tab="1"]').css('opacity', '1');
+$('.gallery [data-tab="1"]').css('visibility', 'visible');
+
 
 
 
@@ -60,33 +61,58 @@ $('body').on('mousewheel', function (e) {
     if ($('.gallery').length > 0) {
 
         if (e.originalEvent.deltaY > 0 && gallery_tab < ($('.screen_slider_points li').length - 1) && gallery_wheel_marker) {
-            gallery_wheel_marker = false;
-
-            hideElem('.gallery [data-tab="tab_' + (gallery_tab + 1) + '"]');
-
-            gallery_tab++;
-
-            showElem('.gallery [data-tab="tab_' + (gallery_tab + 1) + '"]');
-            $('.screen_slider_points .active_screen').css('top', ((slider_point_margin + 5) * gallery_tab) + 'px');
-            setTimeout(function () {
-                gallery_wheel_marker = true;
-            }, 300)
+            changeProject('+');
 
 
         } else if (e.originalEvent.deltaY < 0 && gallery_tab > 0 && gallery_wheel_marker) {
-            gallery_wheel_marker = false;
-            hideElem('.gallery [data-tab="tab_' + (gallery_tab + 1) + '"]');
-            gallery_tab--;
-            showElem('.gallery [data-tab="tab_' + (gallery_tab + 1) + '"]');
-            $('.screen_slider_points .active_screen').css('top', ((slider_point_margin + 5) * gallery_tab) + 'px');
-            setTimeout(function () {
-                gallery_wheel_marker = true;
-            }, 300)
+            changeProject('-');
 
         }
     }
 });
 
+function translateCrystall(slider_point_margin, gallery_tab) {
+    $('.screen_slider_points .active_screen').css('top', ((slider_point_margin + 5) * gallery_tab) + 'px');
+};
+
+function changeProject(value_counter_tab_direction) {
+    // value_counter_tab_direction = '+' if increase '-' if decrease and number if there is click
+    try {
+        gallery_wheel_marker = false;
+
+        hideElem('.gallery [data-tab="' + (gallery_tab + 1) + '"]');
+
+        if (value_counter_tab_direction == "-") {
+            gallery_tab--;
+        } else if (value_counter_tab_direction == "+") {
+            gallery_tab++;
+        } else {
+            gallery_tab = value_counter_tab_direction;
+
+        }
+
+        showElem('.gallery [data-tab="' + (gallery_tab + 1) + '"]');
+
+        translateCrystall(slider_point_margin, gallery_tab);
+
+        setTimeout(function () {
+            gallery_wheel_marker = true;
+        }, 300);
+
+    } catch (err) {
+        console.log(err);
+        console.log('read what should be variable"s value');
+    }
+
+};
+
+
+$('.screen_slider_points li').on('click', function () {
+
+    changeProject($(this).attr('data-project-trigger') - 1)
+
+
+});
 
 function hideElem(selector) {
     $(selector).animate({
@@ -109,6 +135,18 @@ function showElem(selector) {
 
 }
 
+function calcMaxDescHeight() {
+    var height = 0;
+    $('.gallery .screen_slider .slide_description').each(function () {
+        if ($(this).outerHeight() > height) {
+            height = $(this).outerHeight()
+        }
 
+    })
+    return height
 
+}
 
+$('.gallery_wrapper').css('height', ($('.gallery .slider').height() + calcMaxDescHeight()) + 'px');
+
+$('.gallery .screen_slider .slide_description').css('top', $('.gallery .slider').height() + 'px');
