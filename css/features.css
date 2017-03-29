@@ -410,6 +410,9 @@
     position: relative;
 }
 
+
+
+
 @media all and (max-width: 1000px) {
     .menu_inline li a {
         color: white !important;
@@ -427,7 +430,11 @@
 .slider .single_slide {
     position: relative;
 }
-.animated {opacity:0;}
+
+.animated {
+    opacity: 0;
+}
+
 @keyframes arrow {
     0% {
         margin-top: 0px

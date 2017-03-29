@@ -2,6 +2,18 @@
 /* background-color */
 /* font-sizes */
 /* media */
+@font-face {
+  font-family: Bold;
+  src: url(../fonts/GothamProBold.ttf); }
+
+@font-face {
+  font-family: Medium;
+  src: url(../fonts/GothamProMedium.eot), url("../fonts/GothamProMedium.eot?#iefix") format("embedded-opentype"), url(../fonts/GothamProMedium.woff2) format("woff2"); }
+
+@font-face {
+  font-family: Regular;
+  src: url(../fonts/GothamProRegular.eot), url("../fonts/GothamProRegular.eot?#iefix") format("embedded-opentype"), url(../fonts/GothamProRegular.woff2) format("woff2"); }
+
 html,
 body {
   margin: 0;
@@ -258,6 +270,15 @@ button {
         z-index: 10;
         display: inline-block;
         padding-right: 35px; }
+        .header .header_right nav ul li:hover {
+          position: relative; }
+          .header .header_right nav ul li:hover:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-top: 14px solid #efb607; }
         .header .header_right nav ul .menu_active {
           padding-top: 31px;
           border-top: 14px solid #efb607; }
@@ -365,8 +386,7 @@ button {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all ease-out .3s; }
+  background-color: rgba(0, 0, 0, 0.8); }
   .consult_modal .modal_wrapper {
     position: absolute;
     top: 50%;
@@ -375,91 +395,106 @@ button {
     height: 400px;
     padding-top: 90px;
     padding-right: 40px;
-    padding-bottom: 55px;
+    padding-bottom: 30px;
     padding-left: 30px;
-    background-color: #fff;
+    background-color: transparent;
     transform: translate(-50%, -50%);
     overflow: hidden; }
+    .consult_modal .modal_wrapper .figure10 {
+      z-index: 1; }
+    .consult_modal .modal_wrapper .white_field {
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 30px;
+      bottom: 30px; }
     .consult_modal .modal_wrapper h1 {
+      font-family: Bold;
       width: 330px;
       margin-bottom: 15px;
       font-size: 36px;
       line-height: 38px;
-      text-transform: uppercase;
-      font-weight: bold; }
+      text-transform: uppercase; }
     .consult_modal .modal_wrapper p {
       color: #666666; }
-    .consult_modal .modal_wrapper form::before {
-      content: 'Ваше имя:';
-      position: absolute;
-      z-index: 10;
-      right: 329px;
-      bottom: 269px;
-      width: 103px;
-      height: 23px;
-      padding-top: 3px;
-      border-right: 1px solid #cccccc;
-      text-align: center;
-      font-size: 14px; }
-    .consult_modal .modal_wrapper form::after {
-      content: 'Телефон:';
-      position: absolute;
-      z-index: 10;
-      right: 329px;
-      bottom: 201px;
-      width: 103px;
-      height: 23px;
-      padding-top: 3px;
-      border-right: 1px solid #cccccc;
-      text-align: center;
-      font-size: 14px; }
-    .consult_modal .modal_wrapper form input[type=text] {
-      position: absolute;
-      width: 394px;
-      height: 52px;
-      padding-left: 124px;
-      border: 1px solid #e3e3e3;
-      outline: none; }
-      .consult_modal .modal_wrapper form input[type=text]:nth-of-type(1) {
-        right: 40px;
-        bottom: 256px; }
-      .consult_modal .modal_wrapper form input[type=text]:nth-of-type(2) {
-        right: 40px;
-        bottom: 188px; }
-      .consult_modal .modal_wrapper form input[type=text]::-webkit-input-placeholder {
-        color: #000;
-        font-size: 14px;
-        font-weight: bold; }
-      .consult_modal .modal_wrapper form input[type=text]::-moz-placeholder {
-        color: #000;
-        font-size: 14px;
-        font-weight: bold; }
-      .consult_modal .modal_wrapper form input[type=text]:-ms-input-placeholder {
-        color: #000;
-        font-size: 14px;
-        font-weight: bold; }
-      .consult_modal .modal_wrapper form input[type=text]::placeholder {
-        color: #000;
-        font-size: 14px;
-        font-weight: bold; }
-    .consult_modal .modal_wrapper form input[type=submit] {
-      position: absolute;
-      left: 50%;
-      bottom: 54px;
-      width: 244px;
-      height: 52px;
-      border: 2px solid #000;
-      background-color: transparent;
-      transform: translatex(-50%);
-      cursor: pointer;
-      font-weight: bold; }
+    .consult_modal .modal_wrapper form {
+      z-index: 2;
+      position: relative;
+      height: 100%; }
+      .consult_modal .modal_wrapper form .consult_text {
+        float: left; }
+      .consult_modal .modal_wrapper form .consult_fields {
+        float: right; }
+      .consult_modal .modal_wrapper form::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .consult_modal .modal_wrapper form .input {
+        position: relative;
+        margin-bottom: 20px; }
+        .consult_modal .modal_wrapper form .input:before {
+          position: absolute;
+          z-index: 1;
+          width: 103px;
+          height: 23px;
+          border-right: 1px solid #cccccc;
+          padding-left: 15px;
+          font-size: 14px;
+          top: 50%;
+          padding-top: 4px;
+          transform: translateY(-50%);
+          box-sizing: border-box;
+          font-family: Regular; }
+        .consult_modal .modal_wrapper form .input:nth-of-type(1):before {
+          content: 'Ваше имя:'; }
+        .consult_modal .modal_wrapper form .input:nth-of-type(2):before {
+          content: 'Телефон:'; }
+      .consult_modal .modal_wrapper form input[type=text] {
+        width: 394px;
+        height: 52px;
+        padding-left: 125px;
+        border: 1px solid #e3e3e3;
+        outline: none; }
+        .consult_modal .modal_wrapper form input[type=text]::-webkit-input-placeholder {
+          color: #000;
+          font-size: 14px;
+          font-family: Medium; }
+        .consult_modal .modal_wrapper form input[type=text]::-moz-placeholder {
+          color: #000;
+          font-size: 14px;
+          font-family: Medium; }
+        .consult_modal .modal_wrapper form input[type=text]:-ms-input-placeholder {
+          color: #000;
+          font-size: 14px;
+          font-family: Medium; }
+        .consult_modal .modal_wrapper form input[type=text]::placeholder {
+          color: #000;
+          font-size: 14px;
+          font-family: Medium; }
+      .consult_modal .modal_wrapper form input[type=submit] {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        width: 244px;
+        height: 52px;
+        border: 2px solid #000;
+        background-color: transparent;
+        transform: translatex(-50%);
+        cursor: pointer;
+        font-family: Medium;
+        transition: 0.3s; }
+        .consult_modal .modal_wrapper form input[type=submit]:hover {
+          background-color: #000;
+          color: white; }
     .consult_modal .modal_wrapper .close_modal {
       position: absolute;
       top: 15px;
       right: 15px;
       width: 30px;
       height: 30px;
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 2; }
       .consult_modal .modal_wrapper .close_modal::before {
         content: '';
         position: absolute;
@@ -1925,7 +1960,6 @@ button {
     color: #fff; }
   .consult_modal .modal_wrapper{
     width: 90%;
-    height: auto;
     min-height: 450px;
     padding-top: 50px;
     padding-right: 0;
@@ -1939,24 +1973,21 @@ button {
   .consult_modal .modal_wrapper p{
     text-align: center;
     padding: 0 5%;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     color: #000; }
-  .consult_modal .modal_wrapper form::before{
-    display: none; }
-  .consult_modal .modal_wrapper form::after{
+  .consult_modal .modal_wrapper form .consult_text{
+    float: none; }
+  .consult_modal .modal_wrapper form .consult_fields{
+    float: none; }
+  .consult_modal .modal_wrapper form .input:before{
     display: none; }
   .consult_modal .modal_wrapper form input[type=text]{
     width: 90%;
     padding-left: 0;
     text-align: center; }
-  .consult_modal .modal_wrapper form input[type=text]:nth-of-type(1){
-    bottom: 206px;
-    right: 50%;
-    transform: translatex(50%); }
-  .consult_modal .modal_wrapper form input[type=text]:nth-of-type(2){
-    bottom: 138px;
-    right: 50%;
-    transform: translatex(50%); }
+  .consult_modal .modal_wrapper form input[type=text]{
+    display: block;
+    margin: auto; }
   .consult_modal .modal_wrapper form input[type=submit]{
     width: 90%; }
   .variants ul li{
