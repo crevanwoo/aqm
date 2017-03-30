@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/features.css">
+    
     <style>
+        
     @media all and (min-width: 1001px) {
             .header .header_right nav ul li {
                 position: relative;
@@ -24,6 +26,13 @@
                 right: 0;
                 border-top: 14px solid #000;
             }
+            .figure_wrapper {
+                height: 100vh;
+            }
+            footer {
+                position: absolute;
+                bottom: 0;
+            }
         }
         
         header {
@@ -34,15 +43,6 @@
         .gallery .screen_slider .slide_description {
             position: absolute;
             top: 0;
-        }
-        
-        .figure_wrapper {
-            height: 100vh;
-        }
-        
-        footer {
-            position: absolute;
-            bottom: 0;
         }
     }
 
@@ -114,31 +114,31 @@
             <h2>Свяжитесь с нами</h2>
             <form action="#">
                 <label for="name">Имя:</label>
-                <input type="text" id="name" placeholder="Марк Васильев">
+                <input type="text" id="name" placeholder="Ваше имя" required>
                 <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Марк Васильев">
+                <input type="email" id="email" placeholder="Email" required>
                 <label for="text">Текст:</label>
-                <textarea name="" id="text" placeholder="Марк Васильев"></textarea>
+                <textarea name="" id="text" placeholder="Ваше сообщение" required maxlength="800"></textarea>
                 <input type="submit" placeholder="Отправить" class="button">
             </form>
         </div>
 
         <div class="address">
             <div class="street address_element">
-                <span><b>Одесса</b><br>ул. Ильфа и Петрова 20</span>
+                <p><a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%86%D0%BB%D1%8C%D1%84%D0%B0+%D1%82%D0%B0+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B0,+20,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@46.391496,30.7106098,17z/data=!3m1!4b1!4m5!3m4!1s0x40c6335431ee20b5:0xfcf9a1c80308b494!8m2!3d46.391496!4d30.7127985"><b>Одесса</b><br>ул. Ильфа и Петрова 20 </a></p>
             </div>
 
             <div class="timetable address_element">
-                <span><b>График работы</b><br>c 9:00 до 19:00</span>
+                <p><b>График работы</b><br>c 9:00 до 19:00</p>
             </div>
 
             <div class="email address_element">
-                <span><b>email</b><br><a href="mailto:customer.service@aqm.in.ua">customer.service @aqm.in.ua</a>
-					</span>
+                <p><b>email</b><br><a href="mailto:customer.service@aqm.in.ua">customer.service@aqm.in.ua</a>
+                </p>
             </div>
 
             <div class="phone address_element">
-                <span><b>Телефон</b><br><a href="+380671443924">+38 (067) 144-39-24</a></span>
+                <p><b>Телефон</b><br><a href="tel:+380671443924">+38 (067) 144-39-24</a></p>
             </div>
         </div>
         <!--</div>-->

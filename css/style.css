@@ -1126,7 +1126,7 @@ button {
   .request form {
     width: 100%;
     text-align: center; }
-    .request form input[type="text"] {
+    .request form div input {
       width: 30%;
       height: 55px;
       padding: 0 20px;
@@ -1134,7 +1134,7 @@ button {
       margin-right: 7px;
       outline: none;
       line-height: 55px; }
-      .request form input[type="text"]:last-child {
+      .request form div input:last-child {
         margin-right: 0; }
     .request form .button {
       box-sizing: border-box;
@@ -1928,6 +1928,8 @@ button {
     top: 0;
     left: 0;
     transform: none; }
+  .google_map{
+    display: none; }
   .header .logo{
     display: none; }
   .header .header_right .menu_button{
@@ -2064,7 +2066,11 @@ button {
     display: block;
     margin: auto; }
   .consult_modal .modal_wrapper form input[type=submit]{
-    width: 90%; }
+    width: 90%;
+    position: static;
+    transform: none;
+    display: block;
+    margin: auto; }
   .variants ul li{
     width: 49.5%; }
   .gallery{
@@ -2124,10 +2130,17 @@ button {
   .address{
     float: none;
     width: 90%;
-    margin: auto; }
+    margin: auto;
+    margin-top: 50px; }
+  .address .address_element{
+    padding-left: 0;
+    background-image: none; }
   .address_services{
     width: 100%;
     margin-top: 50px; }
+  .address_services .address_element{
+    padding-left: 0;
+    background-image: none; }
   .laying{
     height: 550px;
     background-size: auto; }
@@ -2138,14 +2151,16 @@ button {
     height: auto;
     margin-bottom: 40px; }
   .importance .utility p{
-    text-align: center; }
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px 20px; }
   .videos .video{
     width: 90%;
     margin: 0;
     margin-bottom: 40px; }
   .request{
     height: auto; }
-  .request form input[type="text"]{
+  .request form div input{
     width: 100%; }
   .request form .button{
     width: 100%;

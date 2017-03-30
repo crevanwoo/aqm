@@ -151,6 +151,10 @@
                 }
                 @media (max-width: 1000px) {
                     width: 90%;
+                    position: static;
+                    transform: none;
+                    display: block;
+                    margin: auto;
                 }
             }
         }

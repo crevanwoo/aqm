@@ -21,8 +21,8 @@
 		width: 100%;
 		
 		text-align: center;
-
-		input[type="text"] {
+        div {
+		input {
 			width: 30%;
 			height: 55px;
 			padding: 0 20px;
@@ -39,7 +39,7 @@
 				margin-right: 0;
 			}
 		}
-
+}
 		.button {
            
             box-sizing: border-box;
