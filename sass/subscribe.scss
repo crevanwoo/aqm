@@ -44,6 +44,9 @@
 			font-family: 'Didact Gothic';
 			font-weight: bold;
 			outline: none;
+             transition: $trans;
+            &:hover {color:white;
+            background-color: black;}
 		}
 	}
 }

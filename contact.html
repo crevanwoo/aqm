@@ -12,23 +12,39 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/features.css">
     <style>
-        @media all and (min-width: 1001px) {
-            header {
+    @media all and (min-width: 1001px) {
+            .header .header_right nav ul li {
                 position: relative;
             }
-            .gallery .slider,
-            .gallery .screen_slider .slide_description {
+            .header .header_right nav ul li:hover:before {
+                content: '';
                 position: absolute;
                 top: 0;
-            }
-            .figure_wrapper {
-                height: 100vh;
-            }
-            footer {
-                position: absolute;
-                bottom: 0;
+                left: 0;
+                right: 0;
+                border-top: 14px solid #000;
             }
         }
+        
+        header {
+            position: relative;
+        }
+        
+        .gallery .slider,
+        .gallery .screen_slider .slide_description {
+            position: absolute;
+            top: 0;
+        }
+        
+        .figure_wrapper {
+            height: 100vh;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+    }
 
     </style>
 
@@ -61,9 +77,9 @@
                 <nav class="main_nav hide">
                     <div class="hide_menu"></div>
                     <a href="index.html" class="menu_text">
-						<h1>AQM</h1>
-						<span>Компания №1 в монтаже систем автополива</span>
-					</a>
+                        <h1>AQM</h1>
+                        <span>Компания №1 в монтаже систем автополива</span>
+                    </a>
                     <ul class="menu_inline">
                         <li><a href="about.html">О нас</a></li>
                         <li><a href="gallery.html">Объекты</a></li>
@@ -93,39 +109,39 @@
             </div>
         </div>
 
-        <div class="contact_wraper clearfix">
-            <div class="contact">
-                <h2>Свяжитесь с нами</h2>
-                <form action="#">
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" placeholder="Марк Васильев">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" placeholder="Марк Васильев">
-                    <label for="text">Текст:</label>
-                    <textarea name="" id="text" placeholder="Марк Васильев"></textarea>
-                    <input type="submit" placeholder="Отправить" class="button">
-                </form>
+        <!--<div class="contact_wraper clearfix">-->
+        <div class="contact">
+            <h2>Свяжитесь с нами</h2>
+            <form action="#">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Марк Васильев">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Марк Васильев">
+                <label for="text">Текст:</label>
+                <textarea name="" id="text" placeholder="Марк Васильев"></textarea>
+                <input type="submit" placeholder="Отправить" class="button">
+            </form>
+        </div>
+
+        <div class="address">
+            <div class="street address_element">
+                <span><b>Одесса</b><br>ул. Ильфа и Петрова 20</span>
             </div>
 
-            <div class="address">
-                <div class="street address_element">
-                    <span><b>Одесса</b><br>ул. Ильфа и Петрова 20</span>
-                </div>
+            <div class="timetable address_element">
+                <span><b>График работы</b><br>c 9:00 до 19:00</span>
+            </div>
 
-                <div class="timetable address_element">
-                    <span><b>График работы</b><br>c 9:00 до 19:00</span>
-                </div>
-
-                <div class="email address_element">
-                    <span><b>email</b><br><a href="mailto:customer.service@aqm.in.ua">customer.service @aqm.in.ua</a>
+            <div class="email address_element">
+                <span><b>email</b><br><a href="mailto:customer.service@aqm.in.ua">customer.service @aqm.in.ua</a>
 					</span>
-                </div>
+            </div>
 
-                <div class="phone address_element">
-                    <span><b>Телефон</b><br><a href="+380671443924">+38 (067) 144-39-24</a></span>
-                </div>
+            <div class="phone address_element">
+                <span><b>Телефон</b><br><a href="+380671443924">+38 (067) 144-39-24</a></span>
             </div>
         </div>
+        <!--</div>-->
 
         <footer class="footer">
             <div class="social">

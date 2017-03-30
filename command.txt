@@ -1,1 +1,2 @@
 cd /d D:\Projects\aqm\aqm
+gulp watch

@@ -10,13 +10,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/features.css">
-</head>
-
+	
 <style>
-	body {
+    body {
 		background-color: #f2f2f2;
 	}
-</style>
+        @media all and (min-width: 1001px) {
+        .header .header_right nav ul li {position: relative;}
+        .header .header_right nav ul li:hover:before  {
+           
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                border-top: 14px solid #000;
+            
+            }}
+    </style>
+	
+</head>
+
+
+
 <body>
 
 	<div class="figure_wrapper">
@@ -72,7 +88,127 @@
 		</div> 
 
 		<div class="blog_wrapper clearfix">
-			<div class="bottom_menu block">
+		 <div class="bottom_menu block">
+                <nav>
+                    <ul class="menu_inline">
+                        <li data-menu-tab="0"><a href="#">Сад</a></li>
+                        <li data-menu-tab="1"><a href="#">Дизайн сада</a></li>
+                        <li data-menu-tab="2"><a href="#">Идеи для сада</a></li>
+                        <li data-menu-tab="3"><a href="#">Растения</a></li>
+                        <li data-menu-tab="4"><a href="#">Газон</a></li>
+                    </ul>
+                </nav>
+                <div class="opened_menu" data-menu-tab="0">
+                    <div class="side_menu">
+                        <nav>
+                            <ul>
+                                <li data-menu-inner-tab="0"><a href="#">1</a></li>
+                                <li data-menu-inner-tab="1"><a href="#">2</a></li>
+                                <li data-menu-inner-tab="2"><a href="#">3</a></li>
+                                <li data-menu-inner-tab="3"><a href="#">4</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="opened_menu__news__wrapper" data-menu-inner-tab="0">
+                        <div class="opened_menu_news">
+                            <img src="img/sprite_small.jpg" alt="sprite">
+
+                            <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
+
+                            <div class="date">
+                                <img src="img/calendar.png" alt="">
+                                <span>11.11.2016</span>
+                            </div>
+                        </div>
+
+                        <div class="opened_menu_news">
+                            <img src="img/sprite_small.jpg" alt="sprite">
+
+                            <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
+
+                            <div class="date">
+                                <img src="img/calendar.png" alt="">
+                                <span>11.11.2016</span>
+                            </div>
+                        </div>
+
+                        <div class="opened_menu_news">
+                            <img src="img/sprite_small.jpg" alt="sprite">
+
+                            <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
+
+                            <div class="date">
+                                <img src="img/calendar.png" alt="">
+                                <span>11.11.2016</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="opened_menu" data-menu-tab="1">
+                    <div class="side_menu">
+                        <nav>
+                            <ul>
+                                <li data-menu-inner-tab="0"><a href="#">5</a></li>
+                                <li data-menu-inner-tab="1"><a href="#">6</a></li>
+                                <li data-menu-inner-tab="2"><a href="#">7</a></li>
+                                <li data-menu-inner-tab="3"><a href="#">8</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="opened_menu__news__wrapper" data-menu-inner-tab="0">
+                        <div class="opened_menu_news">
+                            <img src="img/sprite_small.jpg" alt="sprite">
+
+                            <a href="full_news.html"><h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3></a>
+
+                            <div class="date">
+                                <img src="img/calendar.png" alt="">
+                                <span>11.11.2016</span>
+                            </div>
+                        </div>
+
+                        <div class="opened_menu_news">
+                            <img src="img/sprite_small.jpg" alt="sprite">
+
+                             <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
+
+                            <div class="date">
+                                <img src="img/calendar.png" alt="">
+                                <span>11.11.2016</span>
+                            </div>
+                        </div>
+
+                        <div class="opened_menu_news">
+                            <img src="img/sprite_small.jpg" alt="sprite">
+
+                             <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
+
+                            <div class="date">
+                                <img src="img/calendar.png" alt="">
+                                <span>11.11.2016</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <select>
+					<option value="Сад">Сад</option>
+					<option value="Дизайн сада">Дизайн Сада</option>
+					<option value="Идеи для сада">Идеи для сада</option>
+					<option value="Растения">Растения</option>
+					<option value="Газон">Газон</option>
+				</select>
+
+
+            </div>
+			<!--<div class="bottom_menu block">
 				<nav>
 					<ul class="menu_inline">
 						<li><a href="#">Главная</a></li>
@@ -90,7 +226,7 @@
 					<option value="Растения">Растения</option>
 					<option value="Газон">Газон</option>
 				</select>
-			</div>
+			</div>-->
 
 			<div class="content">
 				<div class="search block">
@@ -148,9 +284,12 @@
 					</div>
 				</div>
 
-				<div class="share block_full_news">
+				<div class="share block_full_news" id="share-buttons">
 					<h3>Поделиться в соц сетях</h3>
-					<img src="img/share.png" alt="share">
+					<a href="" id="soc_fb"><img src="img/soc_fb.png" alt=""></a>
+					<a href="" id="soc_tw"><img src="img/soc_tw.png" alt=""></a>
+					<a href="" id="soc_goog"><img src="img/soc_goog.png" alt=""></a>
+					<a href="" id="soc_li"><img src="img/soc_li.png" alt=""></a>					
 				</div>
 
 				<div class="recommend block_full_news">
@@ -178,76 +317,131 @@
 				</div>
 			</div>
 
-			<div class="sidebar">
-				<div class="search block">
-					<form action="#">
-						<input type="text" placeholder="Поиск">
-						<button></button>
-					</form>
-				</div>
+			 <div class="sidebar">
+                <div class="search block">
+                    <form action="#">
+                        <input type="text" placeholder="Поиск">
+                        <input type="submit" value="">
+                    </form>
+                </div>
 
-				<div class="sidebar_news block">
+                <div class="sidebar_news block">
 
-					<div class="switch">
-						<button class="button active_button">Свежие</button>
-						<button class="button">Популярные</button>
-					</div>
+                    <div class="switch">
+                        <button class="button active" data-tab="1">Свежие</button>
+                        <button class="button" data-tab="2">Популярные</button>
+                    </div>
 
-					<div class="fresh_news">
-						<div class="one_news">
-							<img src="img/sprite_micro.jpg" alt="sprite">
-							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
-							<span>Категория</span>
-						</div>
-						<div class="one_news">
-							<img src="img/sprite_micro.jpg" alt="sprite">
-							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
-							<span>Категория</span>
-						</div>
-						<div class="one_news">
-							<img src="img/sprite_micro.jpg" alt="sprite">
-							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
-							<span>Категория</span>
-						</div>
-						<div class="one_news">
-							<img src="img/sprite_micro.jpg" alt="sprite">
-							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
-							<span>Категория</span>
-						</div>
-						<div class="one_news">
-							<img src="img/sprite_micro.jpg" alt="sprite">
-							<a href="full_news.html" class="news_header"><h3>История автополива с древнего рима и до наших дней</h3></a>
-							<span>Категория</span>
-						</div>
-					</div>
-				</div>
+                    <div class="fresh_news active" data-tab="1">
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>История автополива с древнего рима и до наших дней</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>История автополива с древнего рима и до наших дней</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>История автополива с древнего рима и до наших дней</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>История автополива с древнего рима и до наших дней</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>История автополива с древнего рима и до наших дней</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                    </div>
 
-				<div class="subscribe block">
-					<h4>Подписка</h4>
-					<span>Подпишитесь на новости автополива у нас</span>
-					<form action="#">
-						<input type="text" placeholder="Ваш email адресс">
-						<button class="button">Подписка</button>
-					</form>
-				</div>
 
-				<div class="best block">
-					<h4>Лучшие публикации</h4>
-					<div class="sidebar_slider">
-						<img src="img/sprite_small.jpg" alt="Распылитель" width="400px" height="205px">
-						<div class="sidebar_slider_text">
-							<div class="rating">
-								<ul>
-									<li><img src="img/full_star.png" alt=""></li>
-									<li><img src="img/full_star.png" alt=""></li>
-									<li><img src="img/full_star.png" alt=""></li>
-									<li><img src="img/half_star.png" alt=""></li>
-									<li><img src="img/null_star.png" alt=""></li>
-								</ul>
-							</div>
-							<a href="#">История</a>
-							<h5>История автополива с древнего рима и до наших дней</h5>
-							<div class="bullets">
+                    <div class="fresh_news popular_news" data-tab="2">
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                        <div class="one_news">
+                            <img src="img/sprite_micro.jpg" alt="sprite">
+                            <a href="full_news.html" class="news_header">
+                                <h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3>
+                            </a>
+                            <span>Категория</span>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="subscribe block">
+                    <h4>Подписка</h4>
+                    <span>Подпишитесь на новости автополива у нас</span>
+                    <form action="#">
+                        <input type="text" placeholder="Ваш email адресс">
+                        <button class="button">Подписка</button>
+                    </form>
+                </div>
+
+                <div class="best block">
+                    <h4>Лучшие публикации</h4>
+                    <div class="sidebar_slider">
+                        <div class="single_slide">
+                            <img src="img/sprite_small.jpg" alt="Распылитель" width="400px" height="205px">
+                            <div class="sidebar_slider_text">
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/half_star.png" alt=""></li>
+                                        <li><img src="img/null_star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <a href="#">История</a>
+                                <h5>История автополива с древнего рима и до наших дней</h5>
+                                <!--<div class="bullets">
 								<ul>
 									<li></li>
 									<li></li>
@@ -256,19 +450,85 @@
 									<li></li>
 									<li></li>
 								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+							</div>-->
+                            </div>
+                        </div>
 
-				<div class="google block">
-					<img src="img/google.jpg" alt="google">
-				</div>
 
-				<div class="facebook block">
-					<img src="img/facebook.jpg" alt="facebook">
-				</div>
-			</div>
+                        <div class="single_slide">
+                            <img src="img/sprite_small.jpg" alt="Распылитель" width="400px" height="205px">
+                            <div class="sidebar_slider_text">
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/half_star.png" alt=""></li>
+                                        <li><img src="img/null_star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <a href="#">История</a>
+                                <h5>История автополива с древнего рима и до наших дней</h5>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="single_slide">
+                            <img src="img/sprite_small.jpg" alt="Распылитель" width="400px" height="205px">
+                            <div class="sidebar_slider_text">
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/half_star.png" alt=""></li>
+                                        <li><img src="img/null_star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <a href="#">История</a>
+                                <h5>История автополива с древнего рима и до наших дней</h5>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="single_slide">
+                            <img src="img/sprite_small.jpg" alt="Распылитель" width="400px" height="205px">
+                            <div class="sidebar_slider_text">
+                                <div class="rating">
+                                    <ul>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/full_star.png" alt=""></li>
+                                        <li><img src="img/half_star.png" alt=""></li>
+                                        <li><img src="img/null_star.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <a href="#">История</a>
+                                <h5>История автополива с древнего рима и до наших дней</h5>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="google block">
+                    <img src="img/google.jpg" alt="google">
+                </div>
+
+                <div class="facebook block">
+                    <img src="img/facebook.jpg" alt="facebook">
+                </div>
+            </div>
 		</div>
 
 		<footer class="footer">
@@ -304,6 +564,12 @@
 	<script type="text/javascript" src="js/mobile_menu.js"></script>
 	<script type="text/javascript" src="js/consult_modal.js"></script>
  <script type="text/javascript" src="js/jquery.viewportchecker.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript" src="js/scroll_effects.js"></script>
+       <script type="text/javascript" src="js/blog_scripts.js"></script>
+       <script type="text/javascript" src="js/social.js"></script>
 </body>
 </html>

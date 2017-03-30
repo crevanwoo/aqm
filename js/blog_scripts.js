@@ -1,4 +1,4 @@
-$('.blog_wrapper .slider').slick({
+$('.slider').slick({
     dots: true,
     dotsClass: 'bullets',
     arrows: false,
@@ -8,7 +8,7 @@ $('.blog_wrapper .slider').slick({
 
 
 
-$('.blog_wrapper .sidebar_slider').slick({
+$('.sidebar_slider').slick({
     dots: true,
     dotsClass: 'bullets',
     arrows: false,
@@ -42,8 +42,8 @@ $('.blog_wrapper .opened_menu li[data-menu-inner-tab]').on('mouseenter', functio
 });
 
 
-$('.blog_wrapper .sidebar_news .switch button').on('click', function() {
-    $('.blog_wrapper .sidebar_news [data-tab]').removeClass('active');
-    $('.blog_wrapper .sidebar_news [data-tab=' + $(this).attr('data-tab') + ']').addClass('active');
+$('.sidebar_news .switch button').on('click', function() {
+    $('.sidebar_news [data-tab]').removeClass('active');
+    $('.sidebar_news [data-tab=' + $(this).attr('data-tab') + ']').addClass('active');
     
 })

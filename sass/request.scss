@@ -19,16 +19,17 @@
 
 	form {
 		width: 100%;
-		max-width: 1100px;
+		
 		text-align: center;
 
 		input[type="text"] {
 			width: 30%;
 			height: 55px;
-			padding: 20px;
+			padding: 0 20px;
 			margin-bottom: 35px;
 			margin-right: 7px;
 			outline: none;
+            line-height: 55px;
 
 			@media (max-width: 1000px) {
 				width: 100%;
@@ -40,11 +41,16 @@
 		}
 
 		.button {
-			min-width: 260px;
+           
+            box-sizing: border-box;
+			width: 260px;
 			padding: 20px 20px;
 			border: 3px solid #000;
 			font-size: $fs18;
 			background-color: transparent;
+            transition: $trans;
+            &:hover {color: white;
+            background-color: #000;}
 
 			@media (max-width: 1000px) {
 				width: 100%;

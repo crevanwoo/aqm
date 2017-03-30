@@ -11,14 +11,31 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/features.css">
+
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+        
+        @media all and (min-width: 1001px) {
+            .header .header_right nav ul li {
+                position: relative;
+            }
+            .header .header_right nav ul li:hover:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                border-top: 14px solid #000;
+            }
+        }
+
+    </style>
 </head>
 
-<style>
-    body {
-        background-color: #f2f2f2;
-    }
 
-</style>
 
 <body>
 
@@ -42,9 +59,9 @@
                 <nav class="main_nav hide">
                     <div class="hide_menu"></div>
                     <a href="index.html" class="menu_text">
-						<h1>AQM</h1>
-						<span>Компания №1 в монтаже систем автополива</span>
-					</a>
+                        <h1>AQM</h1>
+                        <span>Компания №1 в монтаже систем автополива</span>
+                    </a>
                     <ul class="menu_inline">
                         <li><a href="about.html">О нас</a></li>
                         <li><a href="gallery.html">Объекты</a></li>
@@ -100,7 +117,7 @@
                         <div class="opened_menu_news">
                             <img src="img/sprite_small.jpg" alt="sprite">
 
-                            <h3>История автополива с древнего рима и до наших дней</h3>
+                            <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
 
                             <div class="date">
                                 <img src="img/calendar.png" alt="">
@@ -111,7 +128,7 @@
                         <div class="opened_menu_news">
                             <img src="img/sprite_small.jpg" alt="sprite">
 
-                            <h3>История автополива с древнего рима и до наших дней</h3>
+                            <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
 
                             <div class="date">
                                 <img src="img/calendar.png" alt="">
@@ -122,7 +139,7 @@
                         <div class="opened_menu_news">
                             <img src="img/sprite_small.jpg" alt="sprite">
 
-                            <h3>История автополива с древнего рима и до наших дней</h3>
+                            <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
 
                             <div class="date">
                                 <img src="img/calendar.png" alt="">
@@ -132,10 +149,10 @@
 
                     </div>
                 </div>
-                
-                
-                
-                  <div class="opened_menu" data-menu-tab="1">
+
+
+
+                <div class="opened_menu" data-menu-tab="1">
                     <div class="side_menu">
                         <nav>
                             <ul>
@@ -150,7 +167,7 @@
                         <div class="opened_menu_news">
                             <img src="img/sprite_small.jpg" alt="sprite">
 
-                            <h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3>
+                            <a href="full_news.html"><h3>ИСТОРИЯ АВТОПОЛИВА С ДРЕВНЕГО РИМА И ДО НАШИХ ДНЕЙ</h3></a>
 
                             <div class="date">
                                 <img src="img/calendar.png" alt="">
@@ -161,7 +178,7 @@
                         <div class="opened_menu_news">
                             <img src="img/sprite_small.jpg" alt="sprite">
 
-                            <h3>История автополива с древнего рима и до наших дней</h3>
+                             <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
 
                             <div class="date">
                                 <img src="img/calendar.png" alt="">
@@ -172,7 +189,7 @@
                         <div class="opened_menu_news">
                             <img src="img/sprite_small.jpg" alt="sprite">
 
-                            <h3>История автополива с древнего рима и до наших дней</h3>
+                             <a href="full_news.html"><h3>История автополива с древнего рима и до наших дней</h3></a>
 
                             <div class="date">
                                 <img src="img/calendar.png" alt="">
@@ -248,7 +265,7 @@
                             <span>Название категории</span>
                         </div>
                     </div>
-                 
+
                 </div>
 
                 <div class="news_all">
@@ -449,8 +466,8 @@
                             <span>Категория</span>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="fresh_news popular_news" data-tab="2">
                         <div class="one_news">
                             <img src="img/sprite_micro.jpg" alt="sprite">
@@ -488,11 +505,11 @@
                             <span>Категория</span>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
                 </div>
 
                 <div class="subscribe block">

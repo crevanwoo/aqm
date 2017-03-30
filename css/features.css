@@ -258,6 +258,12 @@
     transform: translateX(-50%);
 }
 
+@media all and (max-width: 1000px) {
+    .blog_wrapper .slider .bullets {
+        bottom: 5px;
+    }
+}
+
 .blog_wrapper .slider .bullets li {
     display: inline-block;
     width: 12px;
@@ -312,12 +318,12 @@
     background-color: #efb607;
 }
 
-.blog_wrapper .bottom_menu {
+.bottom_menu {
     position: relative;
     /*overflow: visible;*/
 }
 
-.blog_wrapper .bottom_menu .opened_menu {
+.bottom_menu .opened_menu {
     /*display: none;*/
     height: 0;
     position: relative;
@@ -328,12 +334,12 @@
     transition: 0.3s;
 }
 
-.blog_wrapper .bottom_menu .opened_menu.active {
+.bottom_menu .opened_menu.active {
     /*display: block;*/
     height: 370px;
 }
 
-.blog_wrapper .bottom_menu .side_menu {
+.bottom_menu .side_menu {
     position: absolute;
     left: 0;
     top: 25px;
@@ -357,17 +363,17 @@
     height: auto;
 }
 
-.blog_wrapper .fresh_news,
-.blog_wrapper .popular_news {
+.fresh_news,
+.popular_news {
     display: none;
 }
 
-.blog_wrapper .fresh_news.active,
-.blog_wrapper .popular_news.active {
+.fresh_news.active,
+.popular_news.active {
     display: block;
 }
 
-.blog_wrapper .sidebar_news .switch .active {
+.sidebar_news .switch .active {
     background-color: #fff;
     font-family: 'Didact Gothic';
     font-weight: bold;
@@ -384,23 +390,6 @@
     overflow: hidden;
 }
 
-.contact_page .google_map:after {
-    content: '';
-    background-color: #2d2e30;
-    position: absolute;
-    top: -1000px;
-    right: 1000px;
-    bottom: 0;
-    transform: rotate(30deg);
-    width: 2000px;
-    height: 3000px;
-}
-
-.contact_wraper {
-    position: relative;
-    z-index: 1
-}
-
 .services_wrapper .map {
     position: relative;
     z-index: 1
@@ -410,16 +399,9 @@
     position: relative;
 }
 
-
-
-
 @media all and (max-width: 1000px) {
-    .menu_inline li a {
+    header .menu_inline li a {
         color: white !important;
-    }
-    .menu_active_black {
-        padding-top: 20px !important;
-        border-top: 0px !important;
     }
     .screen_slider_points {
         left: -15px !important;
