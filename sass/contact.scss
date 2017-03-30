@@ -43,7 +43,7 @@
             font-size: $fs14;
             outline: none;
             font-family: Regular;
-            &[type=submit] {
+            &[type="submit"] {
                 border: 1px solid #2d2e30;
                 @media (max-width: 1000px) {
                     width: 100%;
@@ -57,7 +57,7 @@
                 padding: 1.5vw;
                 font-size: 0.9vw;
             }
-            &::placeholder {
+            @include ph {
                 color: #333333;
                 font-family: Regular;
             }
@@ -74,7 +74,7 @@
                 height: 8vw;
                 padding: 1.5vw;
             }
-            &::placeholder {
+            @include ph {
                 color: #333333;
                 font-family: Regular;
                 @media (min-width: 1600px) {
