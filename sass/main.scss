@@ -327,8 +327,10 @@ button {
     &:-moz-placeholder {
         @content
     }
-    &:placeholder,
     &::placeholder {
+        @content
+    }
+    &:placeholder {
         @content
     }
 }

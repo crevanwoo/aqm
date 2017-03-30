@@ -481,19 +481,15 @@ button {
           color: #000;
           font-size: 14px;
           font-family: Medium; }
-        .consult_modal .modal_wrapper form input[type="text"]:placeholder, .consult_modal .modal_wrapper form input[type="text"]::-webkit-input-placeholder {
+        .consult_modal .modal_wrapper form input[type="text"]:-ms-input-placeholder {
           color: #000;
           font-size: 14px;
           font-family: Medium; }
-        .consult_modal .modal_wrapper form input[type="text"]:placeholder, .consult_modal .modal_wrapper form input[type="text"]::-moz-placeholder {
+        .consult_modal .modal_wrapper form input[type="text"]::placeholder {
           color: #000;
           font-size: 14px;
           font-family: Medium; }
-        .consult_modal .modal_wrapper form input[type="text"]:placeholder, .consult_modal .modal_wrapper form input[type="text"]:-ms-input-placeholder {
-          color: #000;
-          font-size: 14px;
-          font-family: Medium; }
-        .consult_modal .modal_wrapper form input[type="text"]:placeholder, .consult_modal .modal_wrapper form input[type="text"]::placeholder {
+        .consult_modal .modal_wrapper form input[type="text"]:placeholder {
           color: #000;
           font-size: 14px;
           font-family: Medium; }
@@ -911,16 +907,13 @@ button {
     .contact form input::-moz-placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form input:placeholder, .contact form input::-webkit-input-placeholder {
+    .contact form input:-ms-input-placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form input:placeholder, .contact form input::-moz-placeholder {
+    .contact form input::placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form input:placeholder, .contact form input:-ms-input-placeholder {
-      color: #333333;
-      font-family: Regular; }
-    .contact form input:placeholder, .contact form input::placeholder {
+    .contact form input:placeholder {
       color: #333333;
       font-family: Regular; }
   .contact form textarea {
@@ -941,16 +934,19 @@ button {
     .contact form textarea:-moz-placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form textarea:placeholder, .contact form textarea::-webkit-input-placeholder {
+    .contact form textarea::-webkit-input-placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form textarea:placeholder, .contact form textarea::-moz-placeholder {
+    .contact form textarea::-moz-placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form textarea:placeholder, .contact form textarea:-ms-input-placeholder {
+    .contact form textarea:-ms-input-placeholder {
       color: #333333;
       font-family: Regular; }
-    .contact form textarea:placeholder, .contact form textarea::placeholder {
+    .contact form textarea::placeholder {
+      color: #333333;
+      font-family: Regular; }
+    .contact form textarea:placeholder {
       color: #333333;
       font-family: Regular; }
   .contact form .button {
@@ -1512,13 +1508,11 @@ button {
         color: #000; }
       .subscribe form input::-moz-placeholder {
         color: #000; }
-      .subscribe form input:placeholder, .subscribe form input::-webkit-input-placeholder {
+      .subscribe form input:-ms-input-placeholder {
         color: #000; }
-      .subscribe form input:placeholder, .subscribe form input::-moz-placeholder {
+      .subscribe form input::placeholder {
         color: #000; }
-      .subscribe form input:placeholder, .subscribe form input:-ms-input-placeholder {
-        color: #000; }
-      .subscribe form input:placeholder, .subscribe form input::placeholder {
+      .subscribe form input:placeholder {
         color: #000; }
     .subscribe form button {
       float: right;
@@ -1933,13 +1927,15 @@ button {
     font-size: 0.9vw; }
   .contact form textarea:-moz-placeholder{
     font-size: 0.9vw; }
-  .contact form textarea:placeholder, .contact form textarea::-webkit-input-placeholder{
+  .contact form textarea::-webkit-input-placeholder{
     font-size: 0.9vw; }
-  .contact form textarea:placeholder, .contact form textarea::-moz-placeholder{
+  .contact form textarea::-moz-placeholder{
     font-size: 0.9vw; }
-  .contact form textarea:placeholder, .contact form textarea:-ms-input-placeholder{
+  .contact form textarea:-ms-input-placeholder{
     font-size: 0.9vw; }
-  .contact form textarea:placeholder, .contact form textarea::placeholder{
+  .contact form textarea::placeholder{
+    font-size: 0.9vw; }
+  .contact form textarea:placeholder{
     font-size: 0.9vw; }
   .contact form .button{
     width: 11vw;
