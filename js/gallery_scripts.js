@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     /*Before after*/
 
-    $(".slider .slide_view ").twentytwenty({
+    $(".slider .beforeafter").twentytwenty({
         default_offset_pct: 0.25
 
     });
