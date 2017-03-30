@@ -474,22 +474,27 @@ button {
         outline: none;
         /* Firefox 19+ */ }
         .consult_modal .modal_wrapper form input[type="text"]::-webkit-input-placeholder {
+          font-family: sans-serif !important;
           color: #000;
           font-size: 14px;
           font-family: Medium; }
         .consult_modal .modal_wrapper form input[type="text"]::-moz-placeholder {
+          font-family: sans-serif !important;
           color: #000;
           font-size: 14px;
           font-family: Medium; }
         .consult_modal .modal_wrapper form input[type="text"]:-ms-input-placeholder {
+          font-family: sans-serif !important;
           color: #000;
           font-size: 14px;
           font-family: Medium; }
         .consult_modal .modal_wrapper form input[type="text"]::placeholder {
+          font-family: sans-serif !important;
           color: #000;
           font-size: 14px;
           font-family: Medium; }
         .consult_modal .modal_wrapper form input[type="text"]:placeholder {
+          font-family: sans-serif !important;
           color: #000;
           font-size: 14px;
           font-family: Medium; }
@@ -902,18 +907,23 @@ button {
     .contact form input[type="submit"] {
       border: 1px solid #2d2e30; }
     .contact form input::-webkit-input-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form input::-moz-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form input:-ms-input-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form input::placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form input:placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
   .contact form textarea {
@@ -926,27 +936,35 @@ button {
     font-family: Regular;
     /* Firefox 19+ */ }
     .contact form textarea::-webkit-input-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea::-moz-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea:-moz-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea::-webkit-input-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea::-moz-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea:-ms-input-placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea::placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
     .contact form textarea:placeholder {
+      font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
   .contact form .button {
@@ -1505,14 +1523,19 @@ button {
       outline: none;
       /* Firefox 19+ */ }
       .subscribe form input::-webkit-input-placeholder {
+        font-family: sans-serif !important;
         color: #000; }
       .subscribe form input::-moz-placeholder {
+        font-family: sans-serif !important;
         color: #000; }
       .subscribe form input:-ms-input-placeholder {
+        font-family: sans-serif !important;
         color: #000; }
       .subscribe form input::placeholder {
+        font-family: sans-serif !important;
         color: #000; }
       .subscribe form input:placeholder {
+        font-family: sans-serif !important;
         color: #000; }
     .subscribe form button {
       float: right;

@@ -318,19 +318,24 @@ button {
 
 @mixin ph {
     &::-webkit-input-placeholder {
+        font-family: sans-serif !important;
         @content
     }
     &::-moz-placeholder {
+        font-family: sans-serif !important;
         @content
     }
     /* Firefox 19+ */
     &:-moz-placeholder {
+        font-family: sans-serif !important;
         @content
     }
     &::placeholder {
+        font-family: sans-serif !important;
         @content
     }
     &:placeholder {
+        font-family: sans-serif !important;
         @content
     }
 }
