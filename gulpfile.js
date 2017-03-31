@@ -15,7 +15,7 @@ var browserSync = require('browser-sync').create();
 var run = require("run-sequence");
 var del = require("del");
 var uglify = require('gulp-uglify');
-var pump = require('pump');
+//var pump = require('pump');
 
 
 gulp.task("style", function() {
@@ -106,7 +106,7 @@ gulp.task("build", function(fn) {
     run(
       "clean",
       "copy",
-	    "scripts",
+	   
       "images",
       "symbols",
       fn

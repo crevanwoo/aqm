@@ -5,6 +5,7 @@
     color: #fff;
     position: relative;
     margin-left: 30px;
+	padding-bottom: 82px;
     @media (max-width: 1000px) {
         float: none;
         min-width: 0;
@@ -91,6 +92,7 @@
             background-color: #efb607;
             padding: 0;
             transition: $trans;
+			
             &:hover {
                 color: white;
                 background-color: #000;

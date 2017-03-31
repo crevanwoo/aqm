@@ -346,7 +346,8 @@ button {
   height: 82px;
   padding: 0 30px;
   padding-bottom: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  clear: both; }
   .footer .social {
     float: left;
     margin-top: 30px;
@@ -478,11 +479,6 @@ button {
           color: #000;
           font-size: 14px;
           font-family: Medium; }
-        .consult_modal .modal_wrapper form input[type="text"]::-moz-placeholder {
-          font-family: sans-serif !important;
-          color: #000;
-          font-size: 14px;
-          font-family: Medium; }
         .consult_modal .modal_wrapper form input[type="text"]:-ms-input-placeholder {
           font-family: sans-serif !important;
           color: #000;
@@ -599,24 +595,47 @@ button {
       background-color: #efb607; }
 
 .variants ul {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .variants ul:after {
+    display: block;
+    content: '';
+    clear: both; }
   .variants ul li {
-    width: 33%;
-    display: inline-block;
-    margin-bottom: 2px;
-    text-align: left; }
+    width: 33.3%;
+    display: block;
+    border: 2px solid #2d2e30;
+    text-align: left;
+    float: left;
+    transition: 0.3s; }
+    .variants ul li:hover a {
+      color: white; }
+      .variants ul li:hover a .variant:before {
+        background-color: #efb607; }
     .variants ul li:first-child {
       background-color: #efb607; }
+      .variants ul li:first-child:hover {
+        background-color: black; }
     .variants ul li:nth-of-type(2) {
       background-color: #f8c423; }
+      .variants ul li:nth-of-type(2):hover {
+        background-color: black; }
     .variants ul li:nth-of-type(3) {
       background-color: #f8c423; }
+      .variants ul li:nth-of-type(3):hover {
+        background-color: black; }
     .variants ul li:nth-of-type(4) {
       background-color: #ffe138; }
+      .variants ul li:nth-of-type(4):hover {
+        background-color: black; }
     .variants ul li:nth-of-type(5) {
       background-color: #f7d826; }
+      .variants ul li:nth-of-type(5):hover {
+        background-color: black; }
     .variants ul li:last-child {
       background-color: #f3d10f; }
+      .variants ul li:last-child:hover {
+        background-color: black; }
     .variants ul li a .variant {
       position: relative;
       height: 200px;
@@ -629,8 +648,10 @@ button {
         left: 30px;
         width: 110px;
         height: 110px;
-        background-image: url("../img/figure_variants.png"); }
+        background-image: url("../img/figure_variants.png");
+        transition: 0.3s; }
       .variants ul li a .variant span {
+        position: relative;
         display: block;
         font-size: 16px; }
         .variants ul li a .variant span:nth-of-type(1) {
@@ -639,6 +660,10 @@ button {
           font-size: 24px; }
 
 /* gallery */
+.gallery_wrapper {
+  padding-bottom: 80px;
+  box-sizing: content-box; }
+
 .gallery {
   vertical-align: top;
   padding-left: 50px; }
@@ -727,36 +752,42 @@ button {
       width: 29%;
       height: 40vw;
       margin-right: 30px;
-      padding: 25px;
+      padding-left: 25px;
+      padding-bottom: 25px;
       padding-top: 30px;
+      padding-right: 5px;
       background-color: #fff;
       color: #333333;
       overflow: hidden; }
       .gallery .screen_slider .slide_description .description_scroll {
+        display: none;
         position: absolute;
         top: 100px;
         right: 13px;
         height: 330px;
-        width: 1px;
-        background-color: #efb607; }
+        width: 1px; }
       .gallery .screen_slider .slide_description h2 {
         font-size: 24px;
         margin-bottom: 30px;
         text-transform: uppercase; }
-      .gallery .screen_slider .slide_description ul li {
+      .gallery .screen_slider .slide_description ul {
+        overflow: hidden;
         position: relative;
-        padding-left: 20px;
-        margin-bottom: 10px;
-        line-height: 25px;
-        font-size: 14px; }
-        .gallery .screen_slider .slide_description ul li::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 9px;
-          width: 7px;
-          height: 7px;
-          background-color: #efb607; }
+        height: 350px; }
+        .gallery .screen_slider .slide_description ul li {
+          position: relative;
+          padding-left: 20px;
+          margin-bottom: 10px;
+          line-height: 25px;
+          font-size: 14px; }
+          .gallery .screen_slider .slide_description ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 7px;
+            height: 7px;
+            background-color: #efb607; }
       .gallery .screen_slider .slide_description button {
         position: absolute;
         right: 25px;
@@ -884,7 +915,8 @@ button {
   min-width: 400px;
   color: #fff;
   position: relative;
-  margin-left: 30px; }
+  margin-left: 30px;
+  padding-bottom: 82px; }
   .contact h2 {
     margin-bottom: 40px;
     font-size: 30px;
@@ -907,10 +939,6 @@ button {
     .contact form input[type="submit"] {
       border: 1px solid #2d2e30; }
     .contact form input::-webkit-input-placeholder {
-      font-family: sans-serif !important;
-      color: #333333;
-      font-family: Regular; }
-    .contact form input::-moz-placeholder {
       font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
@@ -948,10 +976,6 @@ button {
       color: #333333;
       font-family: Regular; }
     .contact form textarea::-webkit-input-placeholder {
-      font-family: sans-serif !important;
-      color: #333333;
-      font-family: Regular; }
-    .contact form textarea::-moz-placeholder {
       font-family: sans-serif !important;
       color: #333333;
       font-family: Regular; }
@@ -1024,7 +1048,8 @@ button {
   margin-top: -70px;
   padding: 30px 20px;
   background-color: #fff;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 82px; }
   .address_services .address_element {
     padding-left: 70px;
     margin-bottom: 40px;
@@ -1525,9 +1550,6 @@ button {
       .subscribe form input::-webkit-input-placeholder {
         font-family: sans-serif !important;
         color: #000; }
-      .subscribe form input::-moz-placeholder {
-        font-family: sans-serif !important;
-        color: #000; }
       .subscribe form input:-ms-input-placeholder {
         font-family: sans-serif !important;
         color: #000; }
@@ -1917,7 +1939,9 @@ button {
     width: 0.4vw;
     height: 0.4vw; }
   .gallery .screen_slider .slide_description button{
-    right: 1.6vw;
+    left: 0;
+    right: 0;
+    margin: auto;
     bottom: 1.6vw;
     width: 15.5vw;
     max-width: 10000px;
@@ -1951,8 +1975,6 @@ button {
   .contact form textarea:-moz-placeholder{
     font-size: 0.9vw; }
   .contact form textarea::-webkit-input-placeholder{
-    font-size: 0.9vw; }
-  .contact form textarea::-moz-placeholder{
     font-size: 0.9vw; }
   .contact form textarea:-ms-input-placeholder{
     font-size: 0.9vw; }
@@ -2159,7 +2181,8 @@ button {
     width: 95%;
     height: auto;
     margin: 0 auto;
-    border: 1px solid #efb607; }
+    border: 1px solid #efb607;
+    padding-right: 25px; }
   .gallery .screen_slider .slide_description .description_scroll{
     display: none; }
   .gallery .screen_slider .slide_description ul{

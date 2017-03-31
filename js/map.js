@@ -8,8 +8,8 @@ function initMapYellow() {
     var mapOptions = {
         zoom: 15,
         center: {
-            lat: 46.395324,
-            lng: 30.702782,
+            lat: 46.391500,
+            lng: 30.712782,
         },
         disableDefaultUI: true,
         styles: styleArrayYellow
