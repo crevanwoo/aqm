@@ -185,7 +185,7 @@ $(document).ready(function () {
 	$('.nano').mCustomScrollbar({
 		setTop: 0,
 		theme: "dark",
-		setHeight: 350,
+		
 
 	});
 

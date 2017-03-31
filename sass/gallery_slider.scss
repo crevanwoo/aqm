@@ -3,10 +3,11 @@
 	box-sizing: content-box;
 }
 
+$height: 450px;
 .gallery {
 	vertical-align: top;
 	padding-left: 50px;
-	min-height: 550px;
+	min-height: $height;
 	@media (max-width: 1000px) {
 		padding-left: 0;
 		text-align: center;
@@ -14,10 +15,16 @@
 	@media (min-width: 1600px) {
 		padding-left: 3vw;
 	}
+	@media (min-width: 1300px) and (min-height: 750px) and (max-aspect-ratio: 1300/750) {
+		min-height: 550px;
+	}
 	.screen_slider {
 		position: relative;
 		margin-left: 10px;
-		min-height: 550px;
+		min-height: $height;
+		@media (min-width: 1300px) and (min-height: 750px) and (max-aspect-ratio: 1300/750) {
+			min-height: 550px;
+		}
 		.screen_slider_points {
 			position: absolute;
 			top: 10px;
@@ -70,8 +77,14 @@
 		}
 		.slider {
 			display: inline-block;
-			width: 64%;
-			margin-left: 3%;
+			//width: 64%;
+			//margin-left: 3%;
+			width: 50%;
+			margin-left: 10%;
+			@media (min-width: 1300px) and (min-height: 750px) and (max-aspect-ratio: 1300/750) {
+				width: 64%;
+				margin-left: 3%;
+			}
 			@media (max-width: 1000px) {
 				width: 95%;
 				margin: 0 auto;
@@ -185,12 +198,12 @@
 				border: 1px solid #efb607;
 				padding-right: 25px;
 			}
-			@media (min-width: 1600px) {
+			/*@media (min-width: 1600px) {
 				height: 40vw;
 				padding: 1.5vw;
 				margin-right: 1.9vw;
 				padding-top: 1.9vw;
-			}
+			}*/
 			.description_scroll {
 				display: none;
 				position: absolute;
@@ -214,7 +227,7 @@
 			ul {
 				overflow: hidden;
 				position: relative;
-				height: 350px;
+				height: 250px;
 				@media (max-width: 1000px) {
 					margin-bottom: 70px;
 				}
