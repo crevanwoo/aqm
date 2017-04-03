@@ -2314,6 +2314,9 @@ button {
     margin: auto;
     text-transform: uppercase;
     font-size: 16px; }
+  .caption h1{
+    font-size: 40px;
+    line-height: 120%; }
   .variants ul li{
     width: 49.5%; }
   .gallery{
@@ -2388,6 +2391,9 @@ button {
   .laying{
     height: 550px;
     background-size: auto; }
+  .laying h1{
+    font-size: 35px;
+    top: 40%; }
   .importance .utility .slider{
     padding-bottom: 0;
     float: none;

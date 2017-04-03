@@ -24,6 +24,10 @@
 		font-size: $fs40;
 		line-height: 52px;
 		text-align: center;
+        	@media (max-width: 1000px) {
+				font-size: 35px;
+                top: 40%;
+		}
 
 		@media (min-width: 1600px) {
 			font-size: 2.5vw;
