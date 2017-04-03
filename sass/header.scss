@@ -30,7 +30,7 @@
             background-size: 5.75vw;
         }*/
 		span {
-			font-size: $fs14;
+			font-size: $fs16;
 			@media (min-width: 1600px) {
 				font-size: 0.85vw;
 			}
@@ -226,7 +226,7 @@
                     }*/
 					&:hover {
 						cursor: pointer;
-						font-weight: bold;
+						//font-weight: bold;
 						@media (max-width: 1000px) {
 							padding-top: 20px;
 							border: none;
@@ -236,7 +236,7 @@
 							}
 						}
 						a {
-							border-bottom: 1px dashed #fff;
+							//border-bottom: 1px dashed #fff;
 							@media (max-width: 1000px) {
 								border-bottom: none;
 							}
@@ -257,7 +257,8 @@
 			position: relative;
 			z-index: 2;
 			display: inline-block;
-			padding-right: 30px;
+            padding-left: 15px;
+			padding-right: 15px;
 			margin-top: 20px;
 			@media (max-width: 1000px) {
 				margin-top: 32px;
@@ -295,7 +296,7 @@
 				li {
 					&:hover {
 						a {
-							border-bottom: 1px dashed #000;
+							//border-bottom: 1px dashed #000;
 						}
 					}
 					@media (max-width: 1000px) {
@@ -316,4 +317,8 @@
 
 .hide {
 	display: none;
+}
+
+.main_nav .menu_active_black a {
+   // border-bottom: 1px dashed #000;
 }
